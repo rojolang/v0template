@@ -1,3 +1,4 @@
+// app/page.tsx
 import MainComponent from '@/components/MainComponent'
 
 export default function Home() {

@@ -1,10 +1,9 @@
-const projectName = process.env.NEXT_PUBLIC_PROJECT_NAME || 'defaultProjectName';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    trailingSlash: true,
-    basePath: `/${projectName}`,
-    distDir: projectName,
+    reactStrictMode: true,
+    experimental: {
+        appDir: true,
+    },
 };
 
 export default nextConfig;
